@@ -1,6 +1,7 @@
 {
   "name": "v2-typography",
   "styles": [
+    "lib/copy.css",
     "lib/titles.css"
   ]
 }
