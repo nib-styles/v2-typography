@@ -5,20 +5,23 @@
 }
 
 .v2-title--1 {
-  margin-bottom: 40px;
+  margin-top: 60px;
+  margin-bottom: 30px;
   font-size: 54px;
   letter-spacing: -2px;
   line-height: 60px;
 }
 
 .v2-title--2 {
-  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 25px;
   font-size: 36px;
   letter-spacing: -1px;
   line-height: 48px;
 }
 
 .v2-title--3 {
+  margin-top: 40px;
   margin-bottom: 20px;
   font-size: 24px;
   letter-spacing: -1px;
@@ -26,7 +29,8 @@
 }
 
 .v2-title--4 {
-  margin-bottom: 5px;
+  margin-top: 30px;
+  margin-bottom: 15px;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
