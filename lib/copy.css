@@ -4,9 +4,15 @@
   font-family: open sans;
   font-size: 14px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 20px;
 }
 
 .v2-copy--white {
   color: #fff;
+}
+
+.v2-paragraph {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
 }

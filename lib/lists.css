@@ -1,0 +1,15 @@
+
+.v2-list {
+  margin: 0;
+  padding: 0;
+}
+
+.v2-list--copy {
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+
+.v2-list--copy .v2-list__item {
+  margin-top: 7px;
+}
+

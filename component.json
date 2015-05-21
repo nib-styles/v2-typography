@@ -3,6 +3,7 @@
   "styles": [
     "lib/copy.css",
     "lib/links.css",
+    "lib/lists.css",
     "lib/titles.css",
     "lib/utils.css"
   ]
