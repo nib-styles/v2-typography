@@ -13,3 +13,23 @@
   margin-top: 7px;
 }
 
+
+.v2-list--tick {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.v2-list--tick > .v2-list__item {
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.v2-list--tick > .v2-list__item:before {
+  content: "\E01C";
+  margin-right: 10px;
+  position: relative;
+  top:-1px;
+  vertical-align: text-bottom;
+  font: normal normal normal 14px/1 'nibdings';
+  color: #26B11B;
+}

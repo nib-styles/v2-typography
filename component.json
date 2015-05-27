@@ -6,5 +6,8 @@
     "lib/lists.css",
     "lib/titles.css",
     "lib/utils.css"
-  ]
+  ],
+  "dependencies": {
+    "nib-styles/v2-icons": "^2.2.4"
+  }
 }
