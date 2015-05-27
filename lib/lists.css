@@ -19,21 +19,24 @@
 
 .v2-list--icon {
   list-style: none;
-  margin-bottom: 20px;
+  margin-bottom: 1.5em;
 }
 
 .v2-list--icon > .v2-list__item {
-  margin-bottom: 5px;
+  margin-bottom: .5em;
   position: relative;
+  padding-left: 1.5em;
+  line-height: 1.4;
 }
 
 .v2-list--icon > .v2-list__item:before {
-  margin-right: 10px;
   position: relative;
   vertical-align: middle;
   font-family: 'nibdings';
   line-height: 1;
   color: #26B11B;
+  margin-right: .5em;
+  margin-left: -1.5em;
 }
 
 /*
