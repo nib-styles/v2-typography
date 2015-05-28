@@ -5,15 +5,13 @@
 }
 
 .v2-title--1 {
-  margin-top: 60px;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   font-size: 54px;
   letter-spacing: -2px;
   line-height: 60px;
 }
 
 .v2-title--2 {
-  margin-top: 50px;
   margin-bottom: 20px;
   font-size: 36px;
   letter-spacing: -1px;
@@ -21,16 +19,14 @@
 }
 
 .v2-title--3 {
-  margin-top: 40px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-size: 24px;
   letter-spacing: -1px;
   line-height: 32px;
 }
 
 .v2-title--4 {
-  margin-top: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -38,4 +34,28 @@
 
 .v2-title--white {
   color: #fff;
+}
+
+/*
+* Add margins to titles when part of an article/document style page
+*/
+
+.v2-article .v2-title--1 {
+  margin-top: 60px;
+  margin-bottom: 25px;
+}
+
+.v2-article .v2-title--2 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.v2-article .v2-title--3 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.v2-article .v2-title--4 {
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
