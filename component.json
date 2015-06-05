@@ -1,11 +1,7 @@
 {
   "name": "v2-typography",
   "styles": [
-    "lib/copy.css",
-    "lib/links.css",
-    "lib/lists.css",
-    "lib/titles.css",
-    "lib/utils.css"
+    "dir/compiled.css"
   ],
   "dependencies": {
     "nib-styles/v2-icons": "^2.2.4"

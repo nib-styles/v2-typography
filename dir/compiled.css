@@ -1,0 +1,140 @@
+.v2-copy {
+  color: #444;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px; }
+
+.v2-copy--white {
+  color: #fff; }
+
+.v2-paragraph {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.v2-link {
+  cursor: pointer;
+  transition: opacity 0.25s;
+  text-decoration: underline; }
+
+.v2-link:hover {
+  opacity: 0.7; }
+
+.v2-link:active {
+  opacity: 1; }
+
+.v2-link--green {
+  color: #009623; }
+
+.v2-link--grey {
+  color: #444; }
+
+.v2-link--white {
+  color: #fff; }
+
+.v2-list {
+  margin: 0;
+  padding: 0; }
+
+.v2-list--copy {
+  padding-left: 40px;
+  margin-bottom: 20px; }
+
+.v2-list--copy .v2-list__item {
+  margin-top: 7px; }
+
+/*
+* Base Icon List
+*/
+.v2-list--icon {
+  list-style: none;
+  margin-bottom: 1.5em; }
+
+.v2-list--icon > .v2-list__item {
+  margin-bottom: .5em;
+  position: relative;
+  padding-left: 1.5em;
+  line-height: 1.4; }
+
+.v2-list--icon > .v2-list__item:before {
+  position: relative;
+  vertical-align: middle;
+  font-family: 'nibdings';
+  line-height: 1;
+  color: #26B11B;
+  margin-right: .5em;
+  margin-left: -1.5em; }
+
+/*
+* Icon List Modifiers
+*/
+.v2-list--tick > .v2-list__item:before {
+  content: "\E01C";
+  top: -1px; }
+
+.v2-list--chevron > .v2-list__item:before {
+  content: "\E022";
+  top: -2px; }
+
+.v2-title {
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif; }
+
+.v2-title--1 {
+  font-size: 54px;
+  letter-spacing: -2px;
+  line-height: 60px; }
+
+.v2-title--2 {
+  font-size: 36px;
+  letter-spacing: -1px;
+  line-height: 48px; }
+
+.v2-title--3 {
+  font-size: 24px;
+  letter-spacing: -1px;
+  line-height: 32px; }
+
+.v2-title--4 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px; }
+
+.v2-title--white {
+  color: #fff; }
+
+/*
+* Add margins to titles when part of an article/document style page
+*/
+.v2-article .v2-title--1 {
+  margin-top: 60px;
+  margin-bottom: 25px; }
+
+.v2-article .v2-title--2 {
+  margin-top: 50px;
+  margin-bottom: 20px; }
+
+.v2-article .v2-title--3 {
+  margin-top: 40px;
+  margin-bottom: 15px; }
+
+.v2-article .v2-title--4 {
+  margin-top: 30px;
+  margin-bottom: 15px; }
+
+.u-bold {
+  font-weight: bold; }
+
+.u-italic {
+  font-style: italic; }
+
+.u-uppercase {
+  text-transform: uppercase; }
+
+.u-nowrap {
+  white-space: nowrap; }
+
+.u-ellipsis {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis; }
