@@ -4,6 +4,6 @@
     "dir/compiled.css"
   ],
   "dependencies": {
-    "nib-styles/v2-icons": "^2.2.4"
+    "nib-styles/v2-icons": "^2.3.0"
   }
 }
