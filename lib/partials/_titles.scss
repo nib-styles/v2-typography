@@ -1,57 +1,140 @@
+@mixin nib-title() {
 
-.v2-title {
-  font-weight: 300;
   font-family: 'Roboto', sans-serif;
+  margin: 0;
+
 }
 
-.v2-title--1 {
-  font-size: 54px;
-  letter-spacing: -2px;
-  line-height: 60px;
+@mixin nib-title-($title) {
+
+  @include nib-title();
+
+  @if $title == 1 {
+
+    font-size: 54px;
+    font-weight: 300;
+    letter-spacing: -2px;
+    line-height: 60px;
+
+  } @else if $title == 2 {
+
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: -1px;
+    line-height: 48px;
+
+  } @else if $title == 3 {
+
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: -1px;
+    line-height: 32px;
+
+  } @else if $title == 4 {
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+
+  }
+
 }
 
-.v2-title--2 {
-  font-size: 36px;
-  letter-spacing: -1px;
-  line-height: 48px;
+@mixin nib-title-1--($color) {
+
+  @if $color == 'white' {
+    color: hsl(0, 100%, 100%);
+  } @else if $color == 'green' {
+    color: hsl(134, 100%, 29%);
+  }@else if $color == 'grey' {
+    color: hsl(0, 0%, 27%);
+  }
 }
 
-.v2-title--3 {
-  font-size: 24px;
-  letter-spacing: -1px;
-  line-height: 32px;
+@mixin nib-title-2--($color) {
+
+  @if $color == 'white' {
+    color: hsl(0, 100%, 100%);
+  } @else if $color == 'green' {
+    color: hsl(134, 100%, 29%);
+  }@else if $color == 'grey' {
+    color: hsl(0, 0%, 27%);
+  }
 }
 
-.v2-title--4 {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24px;
+@mixin nib-title-3--($color) {
+
+  @if $color == 'white' {
+    color: hsl(0, 100%, 100%);
+  } @else if $color == 'green' {
+    color: hsl(134, 100%, 29%);
+  }@else if $color == 'grey' {
+    color: hsl(0, 0%, 27%);
+  }
 }
 
-.v2-title--white {
-  color: #fff;
+@mixin nib-title-4--($color) {
+
+  @if $color == 'white' {
+    color: hsl(0, 100%, 100%);
+  } @else if $color == 'green' {
+    color: hsl(134, 100%, 29%);
+  }@else if $color == 'grey' {
+    color: hsl(0, 0%, 27%);
+  }
 }
+
+// Loop through to generate title--1 to title--4 classes
+@for $title from 1 through 4 {
+  .nib-title-#{$title} {
+    @include nib-title-($title);
+  }
+}
+
+
+$colours: 'white' 'green' 'grey';
+@each $color in $colours {
+  .nib-title-1--#{$color} {
+    @include nib-title-1--($color);
+  }
+}
+@each $color in $colours {
+  .nib-title-2--#{$color} {
+    @include nib-title-2--($color);
+  }
+}
+@each $color in $colours {
+  .nib-title-3--#{$color} {
+    @include nib-title-3--($color);
+  }
+}
+@each $color in $colours {
+  .nib-title-4--#{$color} {
+    @include nib-title-4--($color);
+  }
+}
+
 
 /*
 * Add margins to titles when part of an article/document style page
 */
 
-.v2-article .v2-title--1 {
+.nib-article .nib-title-1 {
   margin-top: 60px;
   margin-bottom: 25px;
 }
 
-.v2-article .v2-title--2 {
+.nib-article .nib-title-2 {
   margin-top: 50px;
   margin-bottom: 20px;
 }
 
-.v2-article .v2-title--3 {
+.nib-article .nib-title-3 {
   margin-top: 40px;
   margin-bottom: 15px;
 }
 
-.v2-article .v2-title--4 {
+.nib-article .nib-title-4 {
   margin-top: 30px;
   margin-bottom: 15px;
 }
