@@ -4,5 +4,5 @@ Typography styles for nib. See the [nib-pattern-library](http://nib-pattern-libr
 
 ## Build
 
-    sass index.scss > ../dir/compiled.css
+    sass lib/index.scss > dist/compiled.css
     component build --dev
