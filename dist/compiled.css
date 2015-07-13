@@ -47,7 +47,14 @@
 * Base Icon List
 */
 .icon-list {
-  list-style: none; }
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.v2-article .icon-list {
+  list-style: none;
+  padding: 0 0 0 40px;
+  margin: 0 20px 0; }
 
 .icon-list > .icon-list__item {
   margin-bottom: .5em;
