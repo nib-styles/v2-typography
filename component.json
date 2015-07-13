@@ -1,7 +1,7 @@
 {
   "name": "v2-typography",
   "styles": [
-    "dir/compiled.css"
+    "dist/compiled.css"
   ],
   "dependencies": {
     "nib-styles/v2-icons": "^2.3.0"
