@@ -1,17 +1,16 @@
-
 .v2-list {
   margin: 0;
   padding: 0;
-}
-
-.v2-list--copy {
-  padding-left: 40px;
-  margin-bottom: 20px;
 
   //tried using "list-style-position: inside;" - it works great for the case of lists with items that only contain single lines of text but doesn't display
   //correctly for items with multiple lines of text, or for items containing block elements e.g. <li><ul>...</ul><li> or <li><h4>...</h4></li>
   //list-style-position: inside;
 
+}
+
+.v2-list--copy {
+  padding-left: 40px;
+  margin-bottom: 20px;
 }
 
 .v2-list--copy .v2-list__item {
@@ -22,38 +21,65 @@
 * Base Icon List
 */
 
-.v2-list--icon {
+.icon-list {
   list-style: none;
-  margin-bottom: 1.5em;
+  margin: 0;
+  padding: 0;
 }
 
-.v2-list--icon > .v2-list__item {
+.v2-article .icon-list {
+  list-style: none;
+  padding: 0 0 0 40px;
+  margin: 0 0 20px;
+}
+
+.icon-list > .icon-list__item {
   margin-bottom: .5em;
   position: relative;
   padding-left: 1.5em;
   line-height: 1.4;
 }
 
-.v2-list--icon > .v2-list__item:before {
+.icon-list > .icon-list__item:before {
   position: relative;
   vertical-align: middle;
   font-family: 'nibdings';
   line-height: 1;
-  color: #26B11B;
+  color: currentColor;
   margin-right: .5em;
   margin-left: -1.5em;
 }
 
+
 /*
-* Icon List Modifiers
+* Icon Shape Modifiers
 */
 
-.v2-list--tick > .v2-list__item:before {
+.icon-list--tick > .icon-list__item:before {
   content: "\E01C";
   top:-1px;
 }
 
-.v2-list--chevron > .v2-list__item:before {
+.icon-list--cross > .icon-list__item:before {
+  content: "\E004";
+  top:-2px;
+}
+
+.icon-list--chevron > .icon-list__item:before {
   content: "\E022";
   top:-2px;
+}
+
+/*
+* Icon Color Modifiers
+*/
+
+.icon-list--green > .icon-list__item:before {
+  color: hsl(134, 100%, 29%);
+}
+.icon-list--white > .icon-list__item:before {
+  color: hsl(0, 0%, 100%);
+}
+.icon-list--grey > .icon-list__item:before {
+  color: hsl(0, 0%, 27%);
 }
