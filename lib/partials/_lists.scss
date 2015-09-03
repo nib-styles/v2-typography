@@ -7,6 +7,11 @@
 .v2-list--copy {
   padding-left: 40px;
   margin-bottom: 20px;
+
+  //tried using "list-style-position: inside;" - it works great for the case of lists with items that only contain single lines of text but doesn't display
+  //correctly for items with multiple lines of text, or for items containing block elements e.g. <li><ul>...</ul><li> or <li><h4>...</h4></li>
+  //list-style-position: inside;
+
 }
 
 .v2-list--copy .v2-list__item {

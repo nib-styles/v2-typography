@@ -1,6 +1,6 @@
 {
   "name": "@nib-styles/v2-typography",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "main.css": "dist/compiled.css",
   "repository": {
     "type": "git",
@@ -8,5 +8,8 @@
   },
   "dependencies": {
     "@nib-styles/v2-icons": "^2.3.0"
+  },
+  "scripts": {
+    "example.build": "sass-composer example/index.scss -o example/build.css"
   }
 }
