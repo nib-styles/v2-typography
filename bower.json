@@ -7,6 +7,6 @@
     "node_modules/"
   ],
   "dependencies": {
-    "nib-styles/v2-icons": "nib-styles/v2-icons#2.3.0"
+    "v2-icons": "nib-styles/v2-icons#2.3.0"
   }
 }
