@@ -1,6 +1,6 @@
 .v2-list {
-  margin: 0;
-  padding: 0;
+  font-size: 1rem;
+  font-family:open sans;
 
   //tried using "list-style-position: inside;" - it works great for the case of lists with items that only contain single lines of text but doesn't display
   //correctly for items with multiple lines of text, or for items containing block elements e.g. <li><ul>...</ul><li> or <li><h4>...</h4></li>
@@ -8,9 +8,13 @@
 
 }
 
+.v2-list--aligned{
+  padding-left:0;
+}
+
 .v2-list--copy {
   padding-left: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 20px; 
 }
 
 .v2-list--copy .v2-list__item {
@@ -19,12 +23,16 @@
 
 /*
 * Base Icon List
-*/
+*/  
 
 .icon-list {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  font-size: 1rem;
+  font-family:open sans;
+}
+
+.icon-list--large{
+  font-size:1.25rem;
 }
 
 .v2-article .icon-list {
@@ -82,4 +90,23 @@
 }
 .icon-list--grey > .icon-list__item:before {
   color: hsl(0, 0%, 27%);
+}
+
+
+@media screen and (max-width:800px){
+      .v2-list{
+        font-size: 1.125rem;
+      }
+      .icon-list{
+        font-size: 1.125rem;
+      }
+}
+
+@media screen and (max-width:480px){
+      .v2-list{
+        font-size: 1.25rem;
+      }
+      .icon-list{
+        font-size: 1.25rem;
+      }
 }

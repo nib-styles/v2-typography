@@ -1,7 +1,7 @@
 {
   "name": "@nib-styles/v2-typography",
   "version": "2.1.0",
-  "main.css": "dist/compiled.css",
+  "main.css": "lib/index.scss",
   "repository": {
     "type": "git",
     "url": "git@github.com:nib-styles/v2-typography.git"
@@ -9,7 +9,11 @@
   "dependencies": {
     "@nib-styles/v2-icons": "^2.3.0"
   },
+  "devDependencies": {
+    "sass-composer": "^2.0.0-beta6"
+  },
   "scripts": {
-    "example.build": "sass-composer example/index.scss -o example/build.css"
+    "example.build": "sass-composer example/index.scss -o example/build.css",
+    "example.watch": "sass-composer example/index.scss -o example/build.css --watch"
   }
 }

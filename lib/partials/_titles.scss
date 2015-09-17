@@ -6,37 +6,99 @@
 }
 
 .v2-title--1 {
-  font-size: 54px;
+  font-size: 4.5rem;
   letter-spacing: -2px;
-  line-height: 60px;
+  line-height: 1.125em;
+  margin-bottom: 1em;
 }
 
 .v2-title--2 {
-  font-size: 36px;
+  font-size:3.75rem;
   letter-spacing: -1px;
-  line-height: 48px;
+  line-height: 1.125em;
+  margin-bottom: 0.5em;
 }
 
 .v2-title--3 {
-  font-size: 24px;
+  font-size: 2.5rem;
   letter-spacing: -1px;
-  line-height: 32px;
+  line-height: 1.25em;
+  margin-bottom: 0.5em;
 }
 
 .v2-title--4 {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24px;
+  font-size: 1.5rem;
+  line-height: 1.25em;
+  margin-bottom: .5em;
+}
+
+.v2-title--5{
+  font-size: 1rem;
+  line-height: 1.5em;
+  margin-bottom: .5em;
+  font-family: open sans;
+  font-weight: 700;
 }
 
 .v2-title--white {
   color: #fff;
 }
+@media screen and (max-width:960px){
+      html{
+        font-size:87.5%;
+      }
+      .title-1{
+        font-size: 4rem;
+      }
+    }
 
+@media screen and (max-width:800px){
+      html{
+        font-size:80%;
+      }
+      .title-1{
+        font-size: 3.5rem;
+      }
+      .title-2{
+        font-size: 3.25rem;
+      }
+      .title-4{
+        font-weight: 400;
+      }
+      .title-5{
+        font-size: 1.25rem;
+      }
+}
+@media screen and (max-width:640px){
+      html{
+        font-size:75%;
+      }
+    }
+
+    @media screen and (max-width:480px){
+      html{
+        font-size:70%;
+      }
+      .title-1{
+        font-size: 3rem;
+      }
+      .title-2{
+        font-size: 2.75rem;
+      }
+      .title-3{
+        font-size: 2rem;
+      }
+      .title-4{
+        font-size: 1.5rem;
+      }
+      .title-5{
+        font-size:1.25rem;
+      }
+    }
 /*
 * Add margins to titles when part of an article/document style page
 */
-
+/*
 .v2-article .v2-title--1 {
   margin-top: 60px;
   margin-bottom: 25px;
@@ -56,3 +118,5 @@
   margin-top: 30px;
   margin-bottom: 15px;
 }
+
+*/
