@@ -1,6 +1,6 @@
 {
   "name": "@nib-styles/v2-typography",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "main.css": "dist/compiled.css",
   "repository": {
     "type": "git",

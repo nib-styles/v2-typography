@@ -13,6 +13,7 @@
   margin-bottom: 10px; }
 
 .v2-link {
+  color: inherit;
   cursor: pointer;
   transition: opacity 0.25s;
   text-decoration: underline; }
