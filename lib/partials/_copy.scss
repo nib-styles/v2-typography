@@ -13,8 +13,12 @@
   color: #fff;
 }
 
-.copy-large{
+.v2-copy--large{
   font-size: 1.25rem;
+}
+
+.v2-copy--small{
+  font-size: .75rem;
 }
 
 
@@ -26,5 +30,13 @@
 		@media screen and (max-width:480px){
 			.v2-copy{
 				font-size: 1.25rem;
+			}
+
+			.v2-copy--large{
+  				font-size: 1.5rem;
+			}
+
+			.v2-copy--small{
+  				font-size: 1rem;
 			}
 		}
