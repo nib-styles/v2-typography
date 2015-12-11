@@ -1,0 +1,25 @@
+@import "../index";
+@import "@nib-styles/v2-icons";
+
+.some-other-class {
+  @include title($size: 1, $color: green);
+  text-align: right;
+  text-decoration: underline;
+  transform: rotate(180deg);
+}
+
+.subheading {
+  @include title(2, white, true);
+  background: $green--elizabeth;
+  padding: 10px;
+}
+
+.custom-paragraph {
+  @include copy;
+  @include paragraph;
+  text-align: right;
+}
+
+.custom-link {
+  @include link(green);
+}

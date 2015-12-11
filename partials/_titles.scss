@@ -1,0 +1,93 @@
+@mixin title-common() {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+@mixin title-size($size) {
+  @if $size == 1 {
+    font-size: 54px;
+    font-weight: 300;
+    letter-spacing: -2px;
+    line-height: 60px;
+  } @else if $size == 2 {
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: -1px;
+    line-height: 48px;
+  } @else if $size == 3 {
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: -1px;
+    line-height: 32px;
+  } @else if $size == 4 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+@mixin title-color($color) {
+  @if $color == grey {
+    color: $grey;
+  } @else if $color == green {
+    color: $green--charles;
+  } @else if $color == white {
+    color: $white;
+  }
+}
+
+@mixin title-padding($size) {
+  @if $size == 1 {
+    margin-top: 60px;
+    margin-bottom: 25px;
+  } @else if $size == 2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  } @else if $size == 3 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+  } @else if $size == 4 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+}
+
+
+@mixin title($size, $color: $grey, $pad: false) {
+  @include title-common();
+  @include title-size($size);
+  @include title-color($color);
+  @include title-padding($color);
+}
+
+
+.v2-title {
+  @include title-common;
+}
+
+// Loop through to generate title--1 to title--4 classes
+@for $i from 1 through 4 {
+  .v2-title--#{$i} {
+    @include title-size($i);
+  }
+}
+
+/*
+* Add margins to titles when part of an article/document style page
+*/
+
+.v2-article .v2-title--1 {
+  @include title-padding(1);
+}
+
+.v2-article .v2-title--2 {
+  @include title-padding(2);
+}
+
+.v2-article .v2-title--3 {
+  @include title-padding(3);
+}
+
+.v2-article .v2-title--4 {
+  @include title-padding(4);
+}

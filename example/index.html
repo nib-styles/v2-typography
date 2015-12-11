@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <title>Typography</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
         body {
             padding: 1em;
         }
     </style>
-    <link href="build/build.css" rel="stylesheet" type="text/css"/>
+    <link href="build.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400=|Roboto:300,400,700" rel="stylesheet" type="text/css">
 </head>
-<body class="v2-copy">
+<body>
+
+<h1 class="some-other-class">A mixed in heading</h1>
+<p class="custom-paragraph">Nunc urna mi, <a href="#" class="custom-link">faucibus sed egestas</a> quis, laoreet sed felis. Sed tincidunt dictum gravida. Nulla consectetur rutrum consequat. Mauris pharetra consectetur risus, sed tristique sem ultrices nec. Maecenas eget justo risus. Curabitur vitae consequat libero, sit amet varius justo. Sed tempor, risus non efficitur iaculis, sem turpis consequat mi, nec interdum orci magna ac risus. Nulla a lorem a erat placerat cursus eget nec odio. Pellentesque sollicitudin velit purus, quis placerat mauris euismod ac. Cras egestas quam nisi, vel semper nulla gravida sed.</p>
+<h3 class="subheading">Lorem ipsum</h3>
+<p class="custom-paragraph">Nunc urna mi, <a href="#" class="custom-link">faucibus sed egestas</a> quis, laoreet sed felis. Sed tincidunt dictum gravida. Nulla consectetur rutrum consequat. Mauris pharetra consectetur risus, sed tristique sem ultrices nec. Maecenas eget justo risus. Curabitur vitae consequat libero, sit amet varius justo. Sed tempor, risus non efficitur iaculis, sem turpis consequat mi, nec interdum orci magna ac risus. Nulla a lorem a erat placerat cursus eget nec odio. Pellentesque sollicitudin velit purus, quis placerat mauris euismod ac. Cras egestas quam nisi, vel semper nulla gravida sed.</p>
+<h3 class="subheading">Lorem ipsum</h3>
+<p class="custom-paragraph">Nunc urna mi, <a href="#" class="custom-link">faucibus sed egestas</a> quis, laoreet sed felis. Sed tincidunt dictum gravida. Nulla consectetur rutrum consequat. Mauris pharetra consectetur risus, sed tristique sem ultrices nec. Maecenas eget justo risus. Curabitur vitae consequat libero, sit amet varius justo. Sed tempor, risus non efficitur iaculis, sem turpis consequat mi, nec interdum orci magna ac risus. Nulla a lorem a erat placerat cursus eget nec odio. Pellentesque sollicitudin velit purus, quis placerat mauris euismod ac. Cras egestas quam nisi, vel semper nulla gravida sed.</p>
+<article class="v2-article v2-copy">
+
 
     <p class="v2-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur finibus volutpat elit ut porta. Aliquam ullamcorper vestibulum aliquet. Nunc sodales nunc non dui congue lacinia. Integer vitae mi nisi. Donec rhoncus, dolor eget posuere semper, nunc massa dapibus dolor, vulputate laoreet diam ante at arcu. Aenean sed dolor porttitor tellus consequat cursus et et lacus. Praesent vulputate molestie rhoncus. Etiam porta mattis dui, vitae elementum magna scelerisque eget. Phasellus venenatis, nibh et fringilla cursus, nulla libero auctor orci, at bibendum nibh eros et diam. Cras sit amet rutrum velit. Mauris odio nisl, sollicitudin at placerat sed, congue sit amet purus. Vivamus ut consequat ex.</p>
     <h1 class="v2-title v2-title--1">Title 1</h1>
@@ -34,50 +39,56 @@
     </ul>
     <p class="v2-paragraph">Donec elementum libero purus, sit amet laoreet nibh commodo vitae. Maecenas in ligula iaculis, interdum lectus id, lobortis arcu. Proin nisl purus, mattis at suscipit eu, ultrices ac elit. Nam lectus turpis, hendrerit ut interdum pretium, placerat id neque. Phasellus consequat eget quam quis ultrices. Nulla condimentum imperdiet vehicula. Curabitur dignissim urna nunc. Fusce sodales tellus nec diam aliquet ultricies. Sed et dui vel massa dapibus aliquet. Proin elementum ultricies neque sit amet vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam bibendum vel lacus in pharetra. Donec tristique arcu ac volutpat vestibulum. Sed consequat orci vel lectus scelerisque, sed eleifend quam aliquet. Curabitur sollicitudin eget leo ac porta. Fusce congue augue non metus posuere, eget maximus augue mollis.</p>
 
-    <ul class="v2-list v2-list--icon v2-list--tick">
-        <li class="v2-list__item">Libero purus</li>
-        <li class="v2-list__item">Sit amet laoreet nibh</li>
-        <li class="v2-list__item">Commodo vitae</li>
-        <li class="v2-list__item">Wigula iaculis</li>
+    <ul class="icon-list icon-list--tick icon-list--green">
+        <li class="icon-list__item">Libero purus</li>
+        <li class="icon-list__item">Sit amet laoreet nibh</li>
+        <li class="icon-list__item">Commodo vitae</li>
+        <li class="icon-list__item">Wigula iaculis</li>
+    </ul>
+    <ul class="icon-list icon-list--cross">
+        <li class="icon-list__item">Libero purus</li>
+        <li class="icon-list__item">Sit amet laoreet nibh</li>
+        <li class="icon-list__item">Commodo vitae</li>
     </ul>
 
     <p class="v2-paragraph">Uses relative padding/margins to ensure it works at all font sizes. If text breaks down to a second line it will align with the first, not fall beneath the icon.</p>
 
-    <ul class="v2-list v2-list--icon v2-list--tick" style="font-size:12px; width:480px;">
-        <li class="v2-list__item">Fusce sodales tellus nec diam aliquet ultricies</li>
-        <li class="v2-list__item">Sit amet laoreet nibh</li>
-        <li class="v2-list__item">Fusce congue augue non metus posuere, eget maximus augue mollis</li>
-        <li class="v2-list__item">Wigula iaculis</li>
+    <ul class="icon-list icon-list--chevron icon-list--green" style="font-size:12px; width:480px;">
+        <li class="icon-list__item">Fusce sodales tellus nec diam aliquet ultricies</li>
+        <li class="icon-list__item">Sit amet laoreet nibh</li>
+        <li class="icon-list__item">Fusce congue augue non metus posuere, eget maximus augue mollis</li>
+        <li class="icon-list__item">Wigula iaculis</li>
     </ul>
 
-    <ul class="v2-list v2-list--icon v2-list--tick" style="font-size:18px; width:480px;">
-        <li class="v2-list__item">Fusce sodales tellus nec diam aliquet ultricies</li>
-        <li class="v2-list__item">Sit amet laoreet nibh</li>
-        <li class="v2-list__item">Fusce congue augue non metus posuere, eget maximus augue mollis</li>
-        <li class="v2-list__item">Wigula iaculis</li>
+    <ul class="icon-list icon-list--cross" style="font-size:18px; width:480px;">
+        <li class="icon-list__item">Fusce sodales tellus nec diam aliquet ultricies</li>
+        <li class="icon-list__item">Sit amet laoreet nibh</li>
+        <li class="icon-list__item">Fusce congue augue non metus posuere, eget maximus augue mollis</li>
+        <li class="icon-list__item">Wigula iaculis</li>
     </ul>
 
-    <ul class="v2-list v2-list--icon v2-list--tick" style="font-size:21px; width:480px;">
-        <li class="v2-list__item">Fusce sodales tellus nec diam aliquet ultricies</li>
-        <li class="v2-list__item">Sit amet laoreet nibh</li>
-        <li class="v2-list__item">Fusce congue augue non metus posuere, eget maximus augue mollis</li>
-        <li class="v2-list__item">Wigula iaculis</li>
+    <ul class="icon-list icon-list--tick icon-list--white v2-copy--white" style="font-size:21px; width:480px;background: #444; padding: 40px;">
+        <li class="icon-list__item">Fusce sodales tellus nec diam aliquet ultricies</li>
+        <li class="icon-list__item">Sit amet laoreet nibh</li>
+        <li class="icon-list__item">Fusce congue augue non metus posuere, eget maximus augue mollis</li>
+        <li class="icon-list__item">Wigula iaculis</li>
     </ul>
 
-    <ul class="v2-list v2-list--icon v2-list--tick" style="font-size:30px; width:480px;">
-        <li class="v2-list__item">Fusce sodales tellus nec diam aliquet ultricies</li>
-        <li class="v2-list__item">Sit amet laoreet nibh</li>
-        <li class="v2-list__item">Fusce congue augue non metus posuere, eget maximus augue mollis</li>
-        <li class="v2-list__item">Wigula iaculis</li>
+    <ul class="icon-list icon-list--tick" style="font-size:30px; width:480px;">
+        <li class="icon-list__item">Fusce sodales tellus nec diam aliquet ultricies</li>
+        <li class="icon-list__item">Sit amet laoreet nibh</li>
+        <li class="icon-list__item">Fusce congue augue non metus posuere, eget maximus augue mollis</li>
+        <li class="icon-list__item">Wigula iaculis</li>
     </ul>
 
     <p class="v2-paragraph">Donec elementum libero purus, sit amet laoreet nibh commodo vitae. Maecenas in ligula iaculis, interdum lectus id, lobortis arcu. Proin nisl purus, mattis at suscipit eu, ultrices ac elit. Nam lectus turpis, hendrerit ut interdum pretium, placerat id neque. Phasellus consequat eget quam quis ultrices. Nulla condimentum imperdiet vehicula. Curabitur dignissim urna nunc. Fusce sodales tellus nec diam aliquet ultricies. Sed et dui vel massa dapibus aliquet. Proin elementum ultricies neque sit amet vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam bibendum vel lacus in pharetra. Donec tristique arcu ac volutpat vestibulum. Sed consequat orci vel lectus scelerisque, sed eleifend quam aliquet. Curabitur sollicitudin eget leo ac porta. Fusce congue augue non metus posuere, eget maximus augue mollis.</p>
 
-    <ul class="v2-list v2-list--icon v2-list--chevron">
-        <li class="v2-list__item">Libero purus</li>
-        <li class="v2-list__item">Sit amet laoreet nibh</li>
-        <li class="v2-list__item">Commodo vitae</li>
-        <li class="v2-list__item">Wigula iaculis</li>
+    <ul class="icon-list icon-list--chevron">
+        <li class="icon-list__item">Libero purus</li>
+        <li class="icon-list__item">Sit amet laoreet nibh</li>
+        <li class="icon-list__item">Commodo vitae</li>
+        <li class="icon-list__item">Wigula iaculis</li>
     </ul>
 
+</article>
 </body>
