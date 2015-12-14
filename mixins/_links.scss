@@ -3,9 +3,9 @@
   @if $color == inherit {
     color: inherit;
   } @else if $color == green {
-    color: $green--elizabeth;
+    color: $queen-elizabeth;
   } @else if $color == grey {
-    color: $grey;
+    color: $grumpy;
   } @else if $color == white {
     color: $white;
   }
@@ -20,20 +20,4 @@
   &:active{
     opacity: 1;
   }
-}
-
-.v2-link {
-  @include link;
-}
-
-.v2-link--green {
-  color: $green--elizabeth;
-}
-
-.v2-link--grey {
-  color: $grey;
-}
-
-.v2-link--white {
-  color: $white;
 }

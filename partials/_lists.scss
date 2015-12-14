@@ -75,11 +75,11 @@
 */
 
 .icon-list--green > .icon-list__item:before {
-  color: hsl(134, 100%, 29%);
+  color: $queen-elizabeth;
 }
 .icon-list--white > .icon-list__item:before {
-  color: hsl(0, 0%, 100%);
+  color: #fff;
 }
 .icon-list--grey > .icon-list__item:before {
-  color: hsl(0, 0%, 27%);
+  color: $grumpy;
 }

@@ -1,11 +1,9 @@
 // TODO: Move color variables to nib-styles/colors
-$green--elizabeth: #009623;
-$green--charles: #0a6d12;
-$grey: #444;
+$queen-elizabeth: #009623;
+$prince-charles: #0a6d12;
+$grumpy: #444;
 $white: #fff;
 
-@import "./partials/_copy";
-@import "./partials/_links";
-@import "./partials/_lists";
-@import "./partials/_titles";
-@import "./partials/_utils";
+@import "./mixins/_copy";
+@import "./mixins/_links";
+@import "./mixins/_titles";

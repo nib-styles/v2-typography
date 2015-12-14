@@ -1,6 +1,6 @@
-# v2-typography
+# @nib-styles/v2-typography
 
-Typography styles and mixins for nib. See the [nib-pattern-library](http://nib-pattern-library.azurewebsites.net/pages/typography.html) for usage.
+Typography styles and mixins for nib. See the [nib-pattern-library](https://nib-pattern-library.firebaseapp.com/pages/typography.html) for usage.
 
 ## Build
 
@@ -13,44 +13,46 @@ For older projects not using scss. To see an example:
 
 ## Using mixins
 
-Mixins allow us to have fewer classes on html elements, without needing to rewrite styles.
+Mixins allow us to have fewer classes on html elements, without needing to rewrite styles. For the typography mixins we have left behind the `v2-` prefix. 
 
-For the typography mixins we have left behind the `v2-` prefix. 
+There are mixins for titles, copy and links. For lists and utils you will need to use the compiled classes ***(see below)***
 
-### @include title($size: (1-4), $color: (grey, green, white), $pad: (false, true));
-### @include link($color: (inherit, green, grey, white));
+### @include title($size: (1-4), $color: (grey/green/white), $pad: (false/true));
+
+Mixin equivalent of `.v2-title`, plus `.v2-title--1/2/3/4`, plus new capability to adjust colour (grey default) and add padding (false by default)
+
+### @include link($color: (inherit/green/grey/white));
+
+Mixin equivalent of `.v2-link`, plus optional `.v2-link--green/grey/white`
+
 ### @include copy;
+
+Mixin equivalent of `.v2-copy` class.
+
 ### @include paragraph;
+
+Mixin equivalent of `.v2-paragraph` class.
 
 CSS:
 
     @import "@nib-styles/v2-typography";
     
     .box {
-      // mixin equivalent of .v2-copy
       @include copy;
     }
-    
     .custom-title {
-      // mixin equivalent of .v2-title .v2-title--1, plus green text color
       @include title($size: 1, $color: green, $pad: false);
       transform: rotate(180deg);
     }
-    
     .custom-subheading {
-      // mixin equivalent of .v2-title .v2-title--1, plus green text color
       @include title(2, white, true);
       background: $green--elizabeth;
     }
-    
     .custom-paragraph {
-      // mixin equivalent of .v2-paragraph
       @include paragraph;
       text-align: right;
     }
-    
     .custom-link {
-      // mixin equivalent of .v2-link--green
       @include link(green);
     }
 
@@ -61,6 +63,26 @@ HTML:
       <h3 class="custom-subheading">Lorem ipsum</h3>
       <p class="custom-paragraph">Nunc urna mi, <a href="#" class="custom-link">faucibus sed egestas</a> quis, laoreet sed felibitur vit risus i.</p>
     </div>
+    
+## Using compiled classes
+
+CSS:
+
+    @import "@nib-styles/v2-typography/dist/compiled";
+
+
+HTML:
+
+    <div class="v2-article v2-copy">
+      <h1 class="v2-title v2-title--3">Page title</h1>
+      <p class="v2-paragraph">This is a paragraph with a <a class="v2-link" href="#">link</a>.</p>
+      <ul class="v2-list v2-list--copy">
+        <li class="v2-list--item">One</li>
+        <li class="v2-list--item">Two</li>
+        <li class="v2-list--item">Three</li>
+      </ul>
+    </div>
+    
     
 ## Changelog
 

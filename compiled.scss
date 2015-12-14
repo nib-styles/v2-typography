@@ -1,0 +1,64 @@
+// Include all the mixins
+@import "./index";
+
+.v2-copy {
+  @include copy;
+}
+
+.v2-copy--white {
+  color: $white;
+}
+
+.v2-paragraph {
+  @include paragraph;
+}
+
+.v2-title {
+  @include title-common;
+}
+
+// Loop through to generate title--1 to title--4 classes
+@for $i from 1 through 4 {
+  .v2-title--#{$i} {
+    @include title-size($i);
+  }
+}
+
+/*
+* Add margins to titles when part of an article/document style page
+*/
+
+.v2-article .v2-title--1 {
+  @include title-padding(1);
+}
+
+.v2-article .v2-title--2 {
+  @include title-padding(2);
+}
+
+.v2-article .v2-title--3 {
+  @include title-padding(3);
+}
+
+.v2-article .v2-title--4 {
+  @include title-padding(4);
+}
+
+.v2-link {
+  @include link;
+}
+
+.v2-link--green {
+  color: $queen-elizabeth;
+}
+
+.v2-link--grey {
+  color: $grumpy;
+}
+
+.v2-link--white {
+  color: $white;
+}
+
+@import "./partials/_utils";
+@import "./partials/_lists";

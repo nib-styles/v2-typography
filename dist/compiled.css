@@ -12,6 +12,52 @@
   margin-top: 10px;
   margin-bottom: 10px; }
 
+.v2-title {
+  font-family: 'Roboto', sans-serif;
+  margin: 0; }
+
+.v2-title--1 {
+  font-size: 54px;
+  font-weight: 300;
+  letter-spacing: -2px;
+  line-height: 60px; }
+
+.v2-title--2 {
+  font-size: 36px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  line-height: 48px; }
+
+.v2-title--3 {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  line-height: 32px; }
+
+.v2-title--4 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px; }
+
+/*
+* Add margins to titles when part of an article/document style page
+*/
+.v2-article .v2-title--1 {
+  margin-top: 60px;
+  margin-bottom: 25px; }
+
+.v2-article .v2-title--2 {
+  margin-top: 50px;
+  margin-bottom: 20px; }
+
+.v2-article .v2-title--3 {
+  margin-top: 40px;
+  margin-bottom: 15px; }
+
+.v2-article .v2-title--4 {
+  margin-top: 30px;
+  margin-bottom: 15px; }
+
 .v2-link {
   color: inherit;
   cursor: pointer;
@@ -30,6 +76,23 @@
 
 .v2-link--white {
   color: #fff; }
+
+.u-bold {
+  font-weight: bold; }
+
+.u-italic {
+  font-style: italic; }
+
+.u-uppercase {
+  text-transform: uppercase; }
+
+.u-nowrap {
+  white-space: nowrap; }
+
+.u-ellipsis {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 .v2-list {
   margin: 0;
@@ -89,73 +152,10 @@
 * Icon Color Modifiers
 */
 .icon-list--green > .icon-list__item:before {
-  color: #009423; }
+  color: #009623; }
 
 .icon-list--white > .icon-list__item:before {
-  color: white; }
+  color: #fff; }
 
 .icon-list--grey > .icon-list__item:before {
-  color: #454545; }
-
-.v2-title {
-  font-family: 'Roboto', sans-serif;
-  margin: 0; }
-
-.v2-title--1 {
-  font-size: 54px;
-  font-weight: 300;
-  letter-spacing: -2px;
-  line-height: 60px; }
-
-.v2-title--2 {
-  font-size: 36px;
-  font-weight: 300;
-  letter-spacing: -1px;
-  line-height: 48px; }
-
-.v2-title--3 {
-  font-size: 24px;
-  font-weight: 300;
-  letter-spacing: -1px;
-  line-height: 32px; }
-
-.v2-title--4 {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24px; }
-
-/*
-* Add margins to titles when part of an article/document style page
-*/
-.v2-article .v2-title--1 {
-  margin-top: 60px;
-  margin-bottom: 25px; }
-
-.v2-article .v2-title--2 {
-  margin-top: 50px;
-  margin-bottom: 20px; }
-
-.v2-article .v2-title--3 {
-  margin-top: 40px;
-  margin-bottom: 15px; }
-
-.v2-article .v2-title--4 {
-  margin-top: 30px;
-  margin-bottom: 15px; }
-
-.u-bold {
-  font-weight: bold; }
-
-.u-italic {
-  font-style: italic; }
-
-.u-uppercase {
-  text-transform: uppercase; }
-
-.u-nowrap {
-  white-space: nowrap; }
-
-.u-ellipsis {
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis; }
+  color: #444; }

@@ -28,9 +28,9 @@
 
 @mixin title-color($color) {
   @if $color == grey {
-    color: $grey;
+    color: $grumpy;
   } @else if $color == green {
-    color: $green--charles;
+    color: $prince-charles;
   } @else if $color == white {
     color: $white;
   }
@@ -53,41 +53,9 @@
 }
 
 
-@mixin title($size, $color: $grey, $pad: false) {
+@mixin title($size, $color: grey, $pad: false) {
   @include title-common();
   @include title-size($size);
   @include title-color($color);
   @include title-padding($color);
-}
-
-
-.v2-title {
-  @include title-common;
-}
-
-// Loop through to generate title--1 to title--4 classes
-@for $i from 1 through 4 {
-  .v2-title--#{$i} {
-    @include title-size($i);
-  }
-}
-
-/*
-* Add margins to titles when part of an article/document style page
-*/
-
-.v2-article .v2-title--1 {
-  @include title-padding(1);
-}
-
-.v2-article .v2-title--2 {
-  @include title-padding(2);
-}
-
-.v2-article .v2-title--3 {
-  @include title-padding(3);
-}
-
-.v2-article .v2-title--4 {
-  @include title-padding(4);
 }

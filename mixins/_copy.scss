@@ -1,6 +1,6 @@
 @mixin copy($color: grey) {
   @if $color == grey {
-    color: $grey;
+    color: $grumpy;
   } @else if $color == white {
     color: $white;
   }
@@ -10,19 +10,7 @@
   line-height: 20px;
 }
 
-.v2-copy {
-  @include copy;
-}
-
-.v2-copy--white {
-  color: $white;
-}
-
 @mixin paragraph() {
   margin-top: 10px;
   margin-bottom: 10px;
-}
-
-.v2-paragraph {
-  @include paragraph;
 }

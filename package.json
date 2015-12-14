@@ -1,6 +1,6 @@
 {
   "name": "@nib-styles/v2-typography",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "main.css": "dist/compiled.css",
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
     "sass-composer": "2.0.0-beta12"
   },
   "scripts": {
-    "build": "sass-composer index.scss -o dist/compiled.css",
+    "build": "sass-composer compiled.scss -o dist/compiled.css",
     "example.build": "sass-composer example/index.scss -o example/build.css"
   }
 }

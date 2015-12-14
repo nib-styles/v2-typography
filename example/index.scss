@@ -1,4 +1,5 @@
-@import "../index";
+@import "../index"; // Include mixins
+@import "../dist/compiled.css"; // Included compiled
 @import "@nib-styles/v2-icons";
 
 .some-other-class {
@@ -9,9 +10,9 @@
 }
 
 .subheading {
-  @include title(2, white, true);
-  background: $green--elizabeth;
-  padding: 10px;
+  @include title(3, white, true);
+  background: $queen-elizabeth;
+  padding: 5px;
 }
 
 .custom-paragraph {
