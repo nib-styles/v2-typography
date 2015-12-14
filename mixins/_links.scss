@@ -3,11 +3,11 @@
   @if $color == inherit {
     color: inherit;
   } @else if $color == green {
-    color: $queen-elizabeth;
+    color: $color-queen-elizabeth;
   } @else if $color == grey {
-    color: $grumpy;
+    color: $color-dopey;
   } @else if $color == white {
-    color: $white;
+    color: $color-white;
   }
   cursor: pointer;
   transition: opacity 0.25s;

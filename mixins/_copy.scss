@@ -1,8 +1,8 @@
 @mixin copy($color: grey) {
   @if $color == grey {
-    color: $grumpy;
+    color: $color-dopey;
   } @else if $color == white {
-    color: $white;
+    color: $color-white;
   }
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;

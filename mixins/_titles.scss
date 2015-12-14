@@ -28,11 +28,11 @@
 
 @mixin title-color($color) {
   @if $color == grey {
-    color: $grumpy;
+    color: $color-dopey;
   } @else if $color == green {
-    color: $prince-charles;
+    color: $color-prince-charles;
   } @else if $color == white {
-    color: $white;
+    color: $color-white;
   }
 }
 

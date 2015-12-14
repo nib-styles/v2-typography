@@ -6,7 +6,7 @@
 }
 
 .v2-copy--white {
-  color: $white;
+  color: $color-white;
 }
 
 .v2-paragraph {
@@ -49,15 +49,15 @@
 }
 
 .v2-link--green {
-  color: $queen-elizabeth;
+  color: $color-queen-elizabeth;
 }
 
 .v2-link--grey {
-  color: $grumpy;
+  color: $color-dopey;
 }
 
 .v2-link--white {
-  color: $white;
+  color: $color-white;
 }
 
 @import "./partials/_utils";

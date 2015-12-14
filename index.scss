@@ -1,9 +1,4 @@
-// TODO: Move color variables to nib-styles/colors
-$queen-elizabeth: #009623;
-$prince-charles: #0a6d12;
-$grumpy: #444;
-$white: #fff;
-
+@import "@nib-styles/colors";
 @import "./mixins/_copy";
 @import "./mixins/_links";
 @import "./mixins/_titles";
