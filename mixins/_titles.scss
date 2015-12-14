@@ -28,7 +28,7 @@
 
 @mixin title-color($color) {
   @if $color == grey {
-    color: $color-dopey;
+    color: $color-doc;
   } @else if $color == green {
     color: $color-prince-charles;
   } @else if $color == white {

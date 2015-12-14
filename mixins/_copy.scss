@@ -1,6 +1,6 @@
 @mixin copy($color: grey) {
   @if $color == grey {
-    color: $color-dopey;
+    color: $color-doc;
   } @else if $color == white {
     color: $color-white;
   }
