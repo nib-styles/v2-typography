@@ -7,7 +7,7 @@
     "url": "git@github.com:nib-styles/v2-typography.git"
   },
   "dependencies": {
-    "@nib-styles/colors": "^1.1.0",
+    "@nib-styles/colors": "^1.1.1",
     "@nib-styles/v2-icons": "^2.3.0"
   },
   "devDependencies": {
