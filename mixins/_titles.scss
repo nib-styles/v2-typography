@@ -33,29 +33,31 @@
     color: $color-prince-charles;
   } @else if $color == white {
     color: $color-white;
+  } @else if $color == inherit {
+    color: inherit;
   }
 }
 
-@mixin title-padding($size) {
-  @if $size == 1 {
+@mixin title-padding($padding) {
+  @if $padding == 1 {
     margin-top: 60px;
     margin-bottom: 25px;
-  } @else if $size == 2 {
+  } @else if $padding == 2 {
     margin-top: 50px;
     margin-bottom: 20px;
-  } @else if $size == 3 {
+  } @else if $padding == 3 {
     margin-top: 40px;
     margin-bottom: 15px;
-  } @else if $size == 4 {
+  } @else if $padding == 4 {
     margin-top: 30px;
     margin-bottom: 15px;
   }
 }
 
 
-@mixin title($size, $color: grey, $pad: false) {
+@mixin title($size, $color: inherit, $padding: false) {
   @include title-common();
   @include title-size($size);
   @include title-color($color);
-  @include title-padding($color);
+  @include title-padding($padding);
 }

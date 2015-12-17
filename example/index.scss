@@ -3,7 +3,7 @@
 @import "@nib-styles/v2-icons";
 
 .some-other-class {
-  @include title($size: 1, $color: green);
+  @include title($size: 1);
   text-align: right;
   text-decoration: underline;
   transform: rotate(180deg);
