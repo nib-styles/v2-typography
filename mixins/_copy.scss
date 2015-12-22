@@ -1,13 +1,19 @@
-@mixin copy($color: grey) {
+@mixin copy($color: grey, $size: normal) {
   @if $color == grey {
     color: $color-doc;
   } @else if $color == white {
     color: $color-white;
   }
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  @if $size == large {
+    font-size: 1.25rem;
+  } @else if $size == small {
+    font-size: .75rem;
+  }@else if $size == normal {
+    font-size: 1rem;
+  }
   font-weight: 400;
-  line-height: 20px;
+  line-height: 1.5;
 }
 
 @mixin paragraph() {

@@ -2,3 +2,29 @@
 @import "./mixins/_copy";
 @import "./mixins/_links";
 @import "./mixins/_titles";
+
+// These values are the minimum and maximum viewport sizes to apply the font scaling
+$min-width: 400;
+$max-width: 1200;
+
+// These values represent the range of font-size to apply
+// These values effect the base font-size, headings and other elements will scale proportionally
+$min-font: 14;
+$max-font: 20;
+
+html {
+  font-size: #{$min-font}px;
+  line-height: 1.5;
+}
+
+@media (min-width: #{$min-width}px) and (max-width: #{$max-width}px){
+  html {
+    font-size: calc( #{$min-font}px + (#{$max-font} - #{$min-font}) * ( (100vw - #{$min-width}px) / ( #{$max-width} - #{$min-width}) ));
+  }
+}
+
+@media (min-width: #{$max-width}px){
+  html {
+    font-size: #{$max-font}px;
+  }
+}

@@ -83,7 +83,27 @@ HTML:
       </ul>
     </div>
     
-    
+
+## Fluid Type Setting
+
+Fluidly set the type size between a specified min and max font size, over a specified viewport size range.
+
+Current settings:
+
+- `min-font`: 14px
+- `max-font`: 20px
+- `min-width`: 400px
+- `max-width`: 1200px
+
+This means that at screen sizes at or below 400px wide, the font will be 14px. Over 1200px and the font will be fixed at 20px. In between the font will be somewhere in between.
+
+NB: These values are yet to be ratified by the designers.
+
+## Modular Scale
+
+Headings 1-4 and paragraph text obey a [perfect fourth](http://www.modularscale.com/?16&px&1.333&web&text) modular scale. All sizes must be specified relative to the root element using rems in order to follow the scale.
+
+
 ## Changelog
 
 ### v2.3.0

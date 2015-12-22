@@ -1,9 +1,35 @@
+html {
+  font-size: 14px;
+  line-height: 1.5; }
+
+@media (min-width: 400px) and (max-width: 1200px) {
+  html {
+    font-size: calc( 14px + (20 - 14) * ( (100vw - 400px) / ( 1200 - 400) )); } }
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 20px; } }
+
 .v2-copy {
   color: #444;
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 20px; }
+  line-height: 1.5; }
+
+.v2-copy--small {
+  color: #444;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .75rem;
+  font-weight: 400;
+  line-height: 1.5; }
+
+.v2-copy--large {
+  color: #444;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5; }
 
 .v2-copy--white {
   color: #fff; }
@@ -17,46 +43,46 @@
   margin: 0; }
 
 .v2-title--1 {
-  font-size: 54px;
+  font-size: 3.157rem;
   font-weight: 300;
   letter-spacing: -2px;
-  line-height: 60px; }
+  line-height: 1.1; }
 
 .v2-title--2 {
-  font-size: 36px;
+  font-size: 2.369rem;
   font-weight: 300;
   letter-spacing: -1px;
-  line-height: 48px; }
+  line-height: 1.5; }
 
 .v2-title--3 {
-  font-size: 24px;
+  font-size: 1.777rem;
   font-weight: 300;
   letter-spacing: -1px;
-  line-height: 32px; }
+  line-height: 1.5; }
 
 .v2-title--4 {
-  font-size: 18px;
+  font-size: 1.333rem;
   font-weight: 400;
-  line-height: 24px; }
+  line-height: 1.33; }
 
 /*
 * Add margins to titles when part of an article/document style page
 */
 .v2-article .v2-title--1 {
-  margin-top: 60px;
-  margin-bottom: 25px; }
+  margin-top: 4rem;
+  margin-bottom: 1.666rem; }
 
 .v2-article .v2-title--2 {
-  margin-top: 50px;
-  margin-bottom: 20px; }
+  margin-top: 3.333rem;
+  margin-bottom: 1.333rem; }
 
 .v2-article .v2-title--3 {
-  margin-top: 40px;
-  margin-bottom: 15px; }
+  margin-top: 2.666rem;
+  margin-bottom: 1rem; }
 
 .v2-article .v2-title--4 {
-  margin-top: 30px;
-  margin-bottom: 15px; }
+  margin-top: 2rem;
+  margin-bottom: 1rem; }
 
 .v2-link {
   color: inherit;

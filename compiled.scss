@@ -5,6 +5,14 @@
   @include copy;
 }
 
+.v2-copy--small {
+  @include copy($size: small);
+}
+
+.v2-copy--large {
+  @include copy($size: large);
+}
+
 .v2-copy--white {
   color: $color-white;
 }

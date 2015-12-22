@@ -2,23 +2,40 @@
 @import "../dist/compiled.css"; // Included compiled
 @import "@nib-styles/v2-icons";
 
+.wrapper {
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mixins-section {
+  @include copy;
+}
+
 .some-other-class {
   @include title($size: 1);
-  text-align: right;
+  text-align: center;
   text-decoration: underline;
-  transform: rotate(180deg);
+  transform: rotate(357deg);
+  margin-bottom: 2rem;
 }
 
 .subheading {
   @include title(3, white, true);
   background: $color-queen-elizabeth;
-  padding: 5px;
+  padding: .25rem;
+  margin-bottom: 1rem;
 }
 
 .custom-paragraph {
-  @include copy;
   @include paragraph;
-  text-align: right;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.custom-small-paragraph {
+  @include copy($size: small);
+  @include paragraph;
 }
 
 .custom-link {

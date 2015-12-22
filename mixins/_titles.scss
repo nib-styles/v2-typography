@@ -4,26 +4,50 @@
 }
 
 @mixin title-size($size) {
+  // Perfect Fourth Scale
   @if $size == 1 {
-    font-size: 54px;
+    font-size: 3.157rem;
     font-weight: 300;
     letter-spacing: -2px;
-    line-height: 60px;
+    line-height: 1.1;
   } @else if $size == 2 {
-    font-size: 36px;
+    font-size: 2.369rem;
     font-weight: 300;
     letter-spacing: -1px;
-    line-height: 48px;
+    line-height: 1.5;
   } @else if $size == 3 {
-    font-size: 24px;
+    font-size: 1.777rem;
     font-weight: 300;
     letter-spacing: -1px;
-    line-height: 32px;
+    line-height: 1.5;
   } @else if $size == 4 {
-    font-size: 18px;
+    font-size: 1.333rem;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.33;
   }
+  //@media (min-width: 600px) {
+  //  // Perfect Fifth Scale
+  //  @if $size == 1 {
+  //    font-size: 5.063rem;
+  //    font-weight: 300;
+  //    letter-spacing: -2px;
+  //    line-height: 1.1;
+  //  } @else if $size == 2 {
+  //    font-size: 3.375rem;
+  //    font-weight: 300;
+  //    letter-spacing: -1px;
+  //    line-height: 1.5;
+  //  } @else if $size == 3 {
+  //    font-size: 2.25rem;
+  //    font-weight: 300;
+  //    letter-spacing: -1px;
+  //    line-height: 1.5;
+  //  } @else if $size == 4 {
+  //    font-size: 1.5rem;
+  //    font-weight: 400;
+  //    line-height: 1.33;
+  //  }
+  //}
 }
 
 @mixin title-color($color) {
@@ -40,17 +64,17 @@
 
 @mixin title-padding($padding) {
   @if $padding == 1 {
-    margin-top: 60px;
-    margin-bottom: 25px;
+    margin-top: 4rem;
+    margin-bottom: 1.666rem;
   } @else if $padding == 2 {
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-top: 3.333rem;
+    margin-bottom: 1.333rem;
   } @else if $padding == 3 {
-    margin-top: 40px;
-    margin-bottom: 15px;
+    margin-top: 2.666rem;
+    margin-bottom: 1rem;
   } @else if $padding == 4 {
-    margin-top: 30px;
-    margin-bottom: 15px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
 }
 
