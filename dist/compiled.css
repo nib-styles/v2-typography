@@ -1,35 +1,41 @@
-html {
-  font-size: 14px;
-  line-height: 1.5; }
-
-@media (min-width: 400px) and (max-width: 1200px) {
-  html {
-    font-size: calc( 14px + (20 - 14) * ( (100vw - 400px) / ( 1200 - 400) )); } }
-
-@media (min-width: 1200px) {
-  html {
-    font-size: 20px; } }
-
 .v2-copy {
   color: #444;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.5; }
+  @media (min-width: 400px) and (max-width: 1200px) {
+    .v2-copy {
+      font-size: calc(14px + (20 - 14) * ( (100vw - 400px) / ( 1200 - 400) )); } }
+  @media (min-width: 1200px) {
+    .v2-copy {
+      font-size: 20px; } }
 
 .v2-copy--small {
   color: #444;
   font-family: 'Open Sans', sans-serif;
-  font-size: .75rem;
+  font-size: 10.5px;
   font-weight: 400;
   line-height: 1.5; }
+  @media (min-width: 400px) and (max-width: 1200px) {
+    .v2-copy--small {
+      font-size: calc(10.5px + (15 - 10.5) * ( (100vw - 400px) / ( 1200 - 400) )); } }
+  @media (min-width: 1200px) {
+    .v2-copy--small {
+      font-size: 15px; } }
 
 .v2-copy--large {
   color: #444;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.25rem;
+  font-size: 17.5px;
   font-weight: 400;
   line-height: 1.5; }
+  @media (min-width: 400px) and (max-width: 1200px) {
+    .v2-copy--large {
+      font-size: calc(17.5px + (25 - 17.5) * ( (100vw - 400px) / ( 1200 - 400) )); } }
+  @media (min-width: 1200px) {
+    .v2-copy--large {
+      font-size: 25px; } }
 
 .v2-copy--white {
   color: #fff; }
@@ -43,27 +49,51 @@ html {
   margin: 0; }
 
 .v2-title--1 {
-  font-size: 3.157rem;
+  font-size: 44.198px;
   font-weight: 300;
   letter-spacing: -2px;
   line-height: 1.1; }
+  @media (min-width: 400px) and (max-width: 1200px) {
+    .v2-title--1 {
+      font-size: calc(44.198px + (63.14 - 44.198) * ( (100vw - 400px) / ( 1200 - 400) )); } }
+  @media (min-width: 1200px) {
+    .v2-title--1 {
+      font-size: 63.14px; } }
 
 .v2-title--2 {
-  font-size: 2.369rem;
+  font-size: 33.166px;
   font-weight: 300;
   letter-spacing: -1px;
   line-height: 1.5; }
+  @media (min-width: 400px) and (max-width: 1200px) {
+    .v2-title--2 {
+      font-size: calc(33.166px + (47.38 - 33.166) * ( (100vw - 400px) / ( 1200 - 400) )); } }
+  @media (min-width: 1200px) {
+    .v2-title--2 {
+      font-size: 47.38px; } }
 
 .v2-title--3 {
-  font-size: 1.777rem;
+  font-size: 24.878px;
   font-weight: 300;
   letter-spacing: -1px;
   line-height: 1.5; }
+  @media (min-width: 400px) and (max-width: 1200px) {
+    .v2-title--3 {
+      font-size: calc(24.878px + (35.54 - 24.878) * ( (100vw - 400px) / ( 1200 - 400) )); } }
+  @media (min-width: 1200px) {
+    .v2-title--3 {
+      font-size: 35.54px; } }
 
 .v2-title--4 {
-  font-size: 1.333rem;
+  font-size: 18.662px;
   font-weight: 400;
   line-height: 1.33; }
+  @media (min-width: 400px) and (max-width: 1200px) {
+    .v2-title--4 {
+      font-size: calc(18.662px + (26.66 - 18.662) * ( (100vw - 400px) / ( 1200 - 400) )); } }
+  @media (min-width: 1200px) {
+    .v2-title--4 {
+      font-size: 26.66px; } }
 
 /*
 * Add margins to titles when part of an article/document style page

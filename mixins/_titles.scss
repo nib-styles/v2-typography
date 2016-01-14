@@ -6,22 +6,26 @@
 @mixin title-size($size) {
   // Perfect Fourth Scale
   @if $size == 1 {
-    font-size: 3.157rem;
+    //font-size: 3.157rem;
+    @include fluidType(3.157);
     font-weight: 300;
     letter-spacing: -2px;
     line-height: 1.1;
   } @else if $size == 2 {
-    font-size: 2.369rem;
+    //font-size: 2.369rem;
+    @include fluidType(2.369);
     font-weight: 300;
     letter-spacing: -1px;
     line-height: 1.5;
   } @else if $size == 3 {
-    font-size: 1.777rem;
+    //font-size: 1.777rem;
+    @include fluidType(1.777);
     font-weight: 300;
     letter-spacing: -1px;
     line-height: 1.5;
   } @else if $size == 4 {
-    font-size: 1.333rem;
+    //font-size: 1.333rem;
+    @include fluidType(1.333);
     font-weight: 400;
     line-height: 1.33;
   }

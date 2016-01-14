@@ -7,19 +7,27 @@ $max-width: 1200;
 $min-font: 14;
 $max-font: 20;
 
-html {
-  font-size: #{$min-font}px;
-  line-height: 1.5;
+@function font-size($scale) {
+  $min-font: 14 * $scale;
+  $max-font: 20 * $scale;
+
+  @return (
+    calc(#{$min-font}px + (#{$max-font} - #{$min-font}) * ( (100vw - #{$min-width}px) / ( #{$max-width} - #{$min-width}) ))
+  );
 }
 
-@media (min-width: #{$min-width}px) and (max-width: #{$max-width}px){
-  html {
-    font-size: calc( #{$min-font}px + (#{$max-font} - #{$min-font}) * ( (100vw - #{$min-width}px) / ( #{$max-width} - #{$min-width}) ));
+@mixin fluidType($scale) {
+  font-size: #{$min-font * $scale}px;
+
+  @media (min-width: #{$min-width}px) and (max-width: #{$max-width}px) {
+    & {
+      font-size: font-size($scale);
+    }
   }
-}
 
-@media (min-width: #{$max-width}px){
-  html {
-    font-size: #{$max-font}px;
+  @media (min-width: #{$max-width}px) {
+    & {
+      font-size: #{$max-font * $scale}px;
+    }
   }
 }
