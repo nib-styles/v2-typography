@@ -1,0 +1,35 @@
+
+@mixin link-common() {
+
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+
+  &:hover {
+    border-bottom-width: 2px;
+  }
+
+  &:active{
+    border-bottom-width: 1px;
+  }
+
+}
+
+@mixin link-color($color: null) {
+  @if $color == null {
+    color: inherit;
+  } @else if $color == 'green' {
+    color: $color-queen-elizabeth;
+  } @else if $color == 'grey' {
+    color: $color-doc;
+  } @else if $color == 'white' {
+    color: $color-white;
+  } @else {
+    @error('Invalid link-color "#{$color}"');
+  }
+}
+
+@mixin link($color: null) {
+  @include link-common();
+  @include link-color($color);
+}

@@ -1,6 +1,6 @@
-@import "../index"; // Include mixins
-@import "../dist/compiled.css"; // Included compiled
 @import "@nib-styles/v2-icons";
+@import "../index"; // Include mixins
+@import "../compiled"; // Included compiled
 
 .some-other-class {
   @include title($size: 1);
@@ -10,17 +10,16 @@
 }
 
 .subheading {
-  @include title(3, white, true);
+  @include title(3, 'white', true);
   background: $color-queen-elizabeth;
   padding: 5px;
 }
 
 .custom-paragraph {
-  @include copy;
-  @include paragraph;
+  @include copy($pad: true);
   text-align: right;
 }
 
 .custom-link {
-  @include link(green);
+  @include link($color: 'green');
 }

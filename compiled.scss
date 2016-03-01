@@ -1,64 +1,53 @@
 // Include all the mixins
 @import "./index";
 
-.v2-copy {
-  @include copy;
-}
-
-.v2-copy--white {
-  color: $color-white;
-}
-
-.v2-paragraph {
-  @include paragraph;
-}
-
 .v2-title {
-  @include title-common;
+  @include title-common();
 }
 
 // Loop through to generate title--1 to title--4 classes
 @for $i from 1 through 4 {
+
   .v2-title--#{$i} {
     @include title-size($i);
   }
+
+  /*
+  * Add margins to titles when part of an article/document style page
+  */
+  .v2-article .v2-title--#{$i} {
+    @include title-padding($i);
+  }
+
 }
 
-/*
-* Add margins to titles when part of an article/document style page
-*/
-
-.v2-article .v2-title--1 {
-  @include title-padding(1);
+.v2-copy {
+  @include copy($color: 'grey');
 }
 
-.v2-article .v2-title--2 {
-  @include title-padding(2);
+.v2-copy--white {
+  @include copy-color('white');
 }
 
-.v2-article .v2-title--3 {
-  @include title-padding(3);
-}
-
-.v2-article .v2-title--4 {
-  @include title-padding(4);
+.v2-paragraph {
+  @include copy-padding();
 }
 
 .v2-link {
-  @include link;
+  @include link-common();
 }
 
 .v2-link--green {
-  color: $color-queen-elizabeth;
+  @include link-color('green');
 }
 
 .v2-link--grey {
-  color: $color-doc;
+  @include link-color('grey');
 }
 
 .v2-link--white {
-  color: $color-white;
+  @include link-color('white');
 }
 
-@import "./partials/_utils";
-@import "./partials/_lists";
+@import "./partials/utils";
+@import "./partials/lists";
