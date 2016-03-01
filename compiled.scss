@@ -1,6 +1,8 @@
 // Include all the mixins
 @import "./index";
 
+// ============ Title ============
+
 .v2-title {
   @include title-common();
 }
@@ -21,6 +23,8 @@
 
 }
 
+// ============ Copy ============
+
 .v2-copy {
   @include copy($color: 'grey');
 }
@@ -32,6 +36,8 @@
 .v2-paragraph {
   @include copy-padding();
 }
+
+// ============ Link ============
 
 .v2-link {
   @include link-common();
@@ -48,6 +54,8 @@
 .v2-link--white {
   @include link-color('white');
 }
+
+// ============ Utils ============
 
 @import "./partials/utils";
 @import "./partials/lists";

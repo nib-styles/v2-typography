@@ -97,7 +97,8 @@ nib styled typography
 
 - change: `copy()` color defaults to inherit
 - change: `title()`, `copy()` and `link()` mixins error if they receive an invalid value
-- addition: `copy()` size configurable via mixin
+- add: `copy()` size configurable via mixin
+- add: `$font-body` and `$font-title` variables
 - fix: `title()` padding should be dependent on the title size
 - fix: documentation
 

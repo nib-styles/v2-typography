@@ -1,5 +1,4 @@
 build/
 components/
 node_modules/
-example/build.css
-.sass-cache/
+example/example.bundle.css

@@ -1,4 +1,11 @@
 @import "@nib-styles/colors";
+
+$font-stack-open-sans: "Open Sans", "Helvetica Neue", "Helvetica", sans-serif;
+$font-stack-roboto: "Roboto", "Helvetica Neue", "Helvetica", sans-serif;
+
+$font-copy: $font-stack-open-sans;
+$font-title: $font-stack-roboto;
+
 @import "./mixins/copy";
 @import "./mixins/link";
 @import "./mixins/title";
