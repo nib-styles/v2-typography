@@ -98,7 +98,7 @@ nib styled typography
 - change: `copy()` color defaults to inherit
 - change: `title()`, `copy()` and `link()` mixins error if they receive an invalid value
 - addition: `copy()` size configurable via mixin
-- fix: title padding should be dependent on the title size
+- fix: `title()` padding should be dependent on the title size
 - fix: documentation
 
 ### v2.3.0
