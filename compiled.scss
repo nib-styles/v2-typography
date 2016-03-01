@@ -28,20 +28,14 @@
 * Add margins to titles when part of an article/document style page
 */
 
-.v2-article .v2-title--1 {
-  @include title-padding(1);
-}
+.v2-article {
 
-.v2-article .v2-title--2 {
-  @include title-padding(2);
-}
+  @for $i from 1 through 4 {
+    .v2-title--#{$i} {
+      @include title-padding($i);
+    }
+  }
 
-.v2-article .v2-title--3 {
-  @include title-padding(3);
-}
-
-.v2-article .v2-title--4 {
-  @include title-padding(4);
 }
 
 .v2-link {
