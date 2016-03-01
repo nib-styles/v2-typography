@@ -100,6 +100,7 @@ nib styled typography
 - add: `copy()` size configurable via mixin
 - add: `$font-body` and `$font-title` variables
 - fix: `title()` padding should be dependent on the title size
+- fix: issues with mixins comparing strings and color names
 - fix: documentation
 
 ### v2.3.0
