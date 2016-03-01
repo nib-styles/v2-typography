@@ -1,90 +1,108 @@
 # @nib-styles/v2-typography
 
-Typography styles and mixins for nib. See the [nib-pattern-library](https://nib-pattern-library.firebaseapp.com/pages/typography.html) for usage.
+nib styled typography
 
-## Build
+## Installation
 
-    npm run build
-    
-For older projects not using scss. To see an example:
+    npm install --save @nib-styles/v2-typography
 
-    npm run example.build
+**Note**: Requires `Opens Sans` and `Roboto` fonts from Google Fonts:
+
+```html
+<link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,700' />
+```
+
+## Usage
+
+### Using mixins
+
+```scss
+@import "@nib-styles/v2-typography";
+
+.product {
+
+  &__title {
+    @include title(2, $color: 'grey', $padding: true)
+  }
+
+  &__description {
+    @include copy($color: 'grey', $padding: true)
+  }
+
+  &__link {
+    @include link($color: 'green')
+  }
+
+}
+```
+
+```html
+<div class="product">
+    <h2 class="product__title">Top</h2>
+    <p class="product__description">
+      The best hospital cover you can get.
+      <a class="product__link">Join now!</a>
+    </p>
+</div>
+```
+
+### Using compiled classes
+
+```scss
+@import "@nib-styles/v2-typography/compiled";
+```
+
+```html
+<div class="v2-article">
+    <h2 class="v2-title v2-title--2 v2-title--grey">Top</h2>
+    <p class="v2-copy">
+      The best hospital cover you can get.
+      <a class="v2-link v2-link--green">Join now!</a>
+    </p>
+</div>
+```
+
+## Mixins
+
+```scss
+@include title($size, $color : null, $padding : false)
+```
+
+- `$size` Required. An integer from `1-4`.
+
+- `$color` Optional. May be `grey`, `green` or `white`. If no color is provided the title will inherit the color from its parent element.
+
+- `$padding` Optional. If `true` an amount of top and bottom margin is applied.
+
+```scss
+@include copy($size : null, $color : null, $padding : false)
+```
+
+- `$size` Optional. May be `small` or `large`.
+
+- `$color` Optional. May be `grey`, `green` or `white`. If no color is provided the title will inherit the color from its parent element.
+
+ `$padding` Optional. If `true` an amount of top and bottom margin is applied.
 
 
-## Using mixins
+```scss
+@include link($color : null)
+```
 
-Mixins allow us to have fewer classes on html elements, without needing to rewrite styles. For the typography mixins we have left behind the `v2-` prefix. 
+- `$color` Optional. May be `grey` or `white`. If no color is provided the title will inherit the color from its parent element.
 
-There are mixins for titles, copy and links. For lists and utils you will need to use the compiled classes ***(see below)***
-
-### @include title($size: (1-4), $color: (grey/green/white), $pad: (false/true));
-
-Mixin equivalent of `.v2-title`, plus `.v2-title--1/2/3/4`, plus new capability to adjust colour (grey default) and add padding (false by default)
-
-### @include link($color: (inherit/green/grey/white));
-
-Mixin equivalent of `.v2-link`, plus optional `.v2-link--green/grey/white`
-
-### @include copy;
-
-Mixin equivalent of `.v2-copy` class.
-
-### @include paragraph;
-
-Mixin equivalent of `.v2-paragraph` class.
-
-CSS:
-
-    @import "@nib-styles/v2-typography";
-    
-    .box {
-      @include copy;
-    }
-    .custom-title {
-      @include title($size: 1, $color: green, $pad: false);
-      transform: rotate(180deg);
-    }
-    .custom-subheading {
-      @include title(2, white, true);
-      background: $green--elizabeth;
-    }
-    .custom-paragraph {
-      @include paragraph;
-      text-align: right;
-    }
-    .custom-link {
-      @include link(green);
-    }
-
-HTML:
-
-    <div class="box">
-      <h1 class="custom-title">A mixed in heading</h1>
-      <h3 class="custom-subheading">Lorem ipsum</h3>
-      <p class="custom-paragraph">Nunc urna mi, <a href="#" class="custom-link">faucibus sed egestas</a> quis, laoreet sed felibitur vit risus i.</p>
-    </div>
-    
-## Using compiled classes
-
-CSS:
-
-    @import "@nib-styles/v2-typography/dist/compiled";
-
-
-HTML:
-
-    <div class="v2-article v2-copy">
-      <h1 class="v2-title v2-title--3">Page title</h1>
-      <p class="v2-paragraph">This is a paragraph with a <a class="v2-link" href="#">link</a>.</p>
-      <ul class="v2-list v2-list--copy">
-        <li class="v2-list--item">One</li>
-        <li class="v2-list--item">Two</li>
-        <li class="v2-list--item">Three</li>
-      </ul>
-    </div>
-    
-    
 ## Changelog
+
+### v4.0.0
+
+- break: `copy()` color defaults to inherit
+- break: `title()`, `copy()` and `link()` mixins error if they receive an invalid param
+- add: `copy()` size configurable via mixin
+- add: `$font-body` and `$font-title` variables
+- fix/break: `link()`/`.v2-link` now has font specified so it doesn't have to be inside a `v2-copy` block
+- fix: `title()` padding should be dependent on the title size
+- fix: issues with mixins comparing strings and color names
+- fix: documentation
 
 ### v2.3.0
 
@@ -93,7 +111,3 @@ HTML:
 ### v2.2.0
 
 - Setting `color: inherit` on `.v2-link` by default
-
-## To do
-
-- List mixins

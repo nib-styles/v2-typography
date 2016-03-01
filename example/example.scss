@@ -1,0 +1,37 @@
+@import "@nib-styles/v2-icons";
+@import "../index"; // Include mixins
+@import "../compiled"; // Included compiled
+
+.some-other-class {
+  @include title($size: 1);
+  text-align: right;
+  text-decoration: underline;
+  transform: rotate(180deg);
+}
+
+.subheading {
+  @include title(3, 'white', true);
+  background: $color-queen-elizabeth;
+  padding: 5px;
+}
+
+.custom-paragraph {
+  @include copy($pad: true);
+  text-align: right;
+}
+
+.custom-link {
+  @include link($color: 'green');
+}
+
+.p-sm {
+  @include copy($size: 'small');
+}
+
+.p-md {
+  @include copy();
+}
+
+.p-lg {
+  @include copy($size: 'large');
+}
