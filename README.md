@@ -68,7 +68,7 @@ nib styled typography
 @include title($size, $color : null, $padding : false)
 ```
 
-- `$size` Required. A number from `1-4`.
+- `$size` Required. An integer from `1-4`.
 
 - `$color` Optional. May be `grey`, `green` or `white`. If no color is provided the title will inherit the color from its parent element.
 
