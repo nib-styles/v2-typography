@@ -1,6 +1,6 @@
 
 @mixin copy-common() {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-copy;
   font-weight: 400;
   line-height: 20px;
 }
