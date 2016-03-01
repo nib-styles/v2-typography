@@ -23,3 +23,15 @@
 .custom-link {
   @include link($color: 'green');
 }
+
+.p-sm {
+  @include copy($size: 'small');
+}
+
+.p-md {
+  @include copy();
+}
+
+.p-lg {
+  @include copy($size: 'large');
+}

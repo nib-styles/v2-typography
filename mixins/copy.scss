@@ -2,7 +2,7 @@
 @mixin copy-common() {
   font-family: $font-copy;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 1.43; //20px at 14px
 }
 
 @mixin copy-size($size) {
@@ -34,7 +34,7 @@
   margin-bottom: 10px;
 }
 
-@mixin copy($size:  null, $color: null, $pad:  false) {
+@mixin copy($size: null, $color: null, $pad:  false) {
   @include copy-common();
   @include copy-size($size);
   @include copy-color($color);

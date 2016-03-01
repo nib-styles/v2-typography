@@ -1,6 +1,9 @@
 
 @mixin link-common() {
 
+  font-family: $font-copy;
+  font-wieght: 400;
+
   cursor: pointer;
   text-decoration: none;
   border-bottom: 1px solid currentColor;
