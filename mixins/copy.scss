@@ -20,9 +20,9 @@
 @mixin copy-color($color) {
   @if $color == null {
     color: inherit;
-  } @else if $color == 'grey' {
+  } @else if $color == 'grey' or $color == grey { //because string and color name are not equal
     color: $color-doc;
-  } @else if $color == 'white' {
+  } @else if $color == 'white' or $color == white { //because string and color name are not equal
     color: $color-white;
   } @else {
     @error('Invalid copy-color "#{$color}"');

@@ -93,6 +93,10 @@ nib styled typography
 
 ## Changelog
 
+### v4.0.2
+
+- fix: both color names and color name strings work for `title()`, `copy()` and `link()` mixins e.g. `copy($color: green)`, `copy($color: 'green')`
+
 ### v4.0.0
 
 - break: `copy()` color defaults to inherit

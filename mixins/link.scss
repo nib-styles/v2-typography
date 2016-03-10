@@ -21,11 +21,11 @@
 @mixin link-color($color: null) {
   @if $color == null {
     color: inherit;
-  } @else if $color == 'green' {
+  } @else if $color == 'green' or $color == green { //because string and color name are not equal
     color: $color-queen-elizabeth;
-  } @else if $color == 'grey' {
+  } @else if $color == 'grey' or $color == grey { //because string and color name are not equal
     color: $color-doc;
-  } @else if $color == 'white' {
+  } @else if $color == 'white' or $color == white { //because string and color name are not equal
     color: $color-white;
   } @else {
     @error('Invalid link-color "#{$color}"');
