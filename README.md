@@ -91,7 +91,19 @@ nib styled typography
 
 - `$color` Optional. May be `grey` or `white`. If no color is provided the title will inherit the color from its parent element.
 
+## Functions
+
+```scss
+text-color-disabled($color)
+```
+
+- `$color` Required. The normal text color.
+
 ## Changelog
+
+### v4.1.0
+
+- add: a reusable function for generating the disabled text color 
 
 ### v4.0.2
 

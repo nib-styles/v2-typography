@@ -6,6 +6,10 @@ $font-stack-roboto: "Roboto", "Helvetica Neue", "Helvetica", sans-serif;
 $font-copy: $font-stack-open-sans;
 $font-title: $font-stack-roboto;
 
+@function text-color-disabled($color) {
+  @return rgba($color, 0.3);
+}
+
 @import "./mixins/copy";
 @import "./mixins/link";
 @import "./mixins/title";
