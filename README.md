@@ -101,9 +101,9 @@ text-color-disabled($color)
 
 ## Changelog
 
-### v4.1.0
+### v4.2.0
 
-- add: a reusable function for generating the disabled text color 
+- add: a reusable function for generating the disabled text color
 
 ### v4.0.2
 
