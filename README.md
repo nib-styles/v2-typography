@@ -89,7 +89,7 @@ nib styled typography
 @include link($color : null)
 ```
 
-- `$color` Optional. May be `grey` or `white`. If no color is provided the title will inherit the color from its parent element.
+- `$color` Optional. May be `green`, `grey` or `white`. If no color is provided the title will inherit the color from its parent element.
 
 ## Functions
 
