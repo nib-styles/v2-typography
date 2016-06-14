@@ -54,7 +54,7 @@ nib styled typography
 
 ```html
 <div class="v2-article">
-    <h2 class="v2-title v2-title--2 v2-title--grey">Top</h2>
+    <h2 class="v2-title v2-title--2 v2-title--color-doc">Top</h2>
     <p class="v2-copy">
       The best hospital cover you can get.
       <a class="v2-link v2-link--green">Join now!</a>
