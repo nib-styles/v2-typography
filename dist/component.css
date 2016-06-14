@@ -53,6 +53,15 @@
   margin-top: 30px;
   margin-bottom: 15px; }
 
+.v2-title--color-doc {
+  color: #444; }
+
+.v2-title--color-queen-elizabeth {
+  color: #009623; }
+
+.v2-title--color-white {
+  color: #fff; }
+
 .v2-copy {
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", sans-serif;
   font-weight: 400;
@@ -69,7 +78,7 @@
 
 .v2-link {
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", sans-serif;
-  font-wieght: 400;
+  font-weight: 400;
   cursor: pointer;
   text-decoration: none;
   border-bottom: 1px solid currentColor; }
