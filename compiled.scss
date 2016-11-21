@@ -52,7 +52,7 @@
 // ============ Link ============
 
 .v2-link {
-  @include link-common();
+  @include link();
 }
 
 .v2-link--green {
