@@ -101,6 +101,11 @@ text-color-disabled($color)
 
 ## Changelog
 
+### v4.3.0
+
+- fix: colour should default to `currentColour` when no color is specified
+
+
 ### v4.2.0
 
 - add: a reusable function for generating the disabled text color

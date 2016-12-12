@@ -81,7 +81,8 @@
   font-weight: 400;
   cursor: pointer;
   text-decoration: none;
-  border-bottom: 1px solid currentColor; }
+  border-bottom: 1px solid currentColor;
+  color: currentColor; }
   .v2-link:hover {
     border-bottom-width: 2px; }
   .v2-link:active {
