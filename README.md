@@ -22,11 +22,11 @@ nib styled typography
 .product {
 
   &__title {
-    @include title(2, $color: 'grey', $padding: true)
+    @include title(2, $color: 'grey', $pad: true)
   }
 
   &__description {
-    @include copy($color: 'grey', $padding: true)
+    @include copy($color: 'grey', $pad: true)
   }
 
   &__link {
