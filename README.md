@@ -22,11 +22,11 @@ nib styled typography
 .product {
 
   &__title {
-    @include title(2, $color: 'grey', $padding: true)
+    @include title(2, $color: 'grey', $pad: true)
   }
 
   &__description {
-    @include copy($color: 'grey', $padding: true)
+    @include copy($color: 'grey', $pad: true)
   }
 
   &__link {
@@ -100,6 +100,11 @@ text-color-disabled($color)
 - `$color` Required. The normal text color.
 
 ## Changelog
+
+### v4.3.0
+
+- fix: colour should default to `currentColour` when no color is specified
+
 
 ### v4.2.0
 

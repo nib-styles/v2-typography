@@ -20,7 +20,7 @@
 
 @mixin link-color($color: null) {
   @if $color == null {
-    color: inherit;
+    color: currentColor;
   } @else if $color == 'green' or $color == green { //because string and color name are not equal
     color: $color-queen-elizabeth;
   } @else if $color == 'grey' or $color == grey { //because string and color name are not equal
