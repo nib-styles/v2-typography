@@ -1,13 +1,13 @@
 {
   "name": "@nib-styles/v2-typography",
-  "version": "4.3.0",
+  "version": "5.0.0",
   "repository": {
     "type": "git",
     "url": "git@github.com:nib-styles/v2-typography.git"
   },
   "dependencies": {
     "@nib-styles/colors": "^1.1.1",
-    "@nib-styles/v2-icons": "^2.3.0"
+    "@nib-styles/v2-icons": "^3.0.0"
   },
   "devDependencies": {
     "sass-composer": "2.0.0-beta14"

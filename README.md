@@ -101,6 +101,10 @@ text-color-disabled($color)
 
 ## Changelog
 
+### 5.0.0
+
+- break: bump version of `v2-icons`
+
 ### v4.3.0
 
 - fix: colour should default to `currentColour` when no color is specified
