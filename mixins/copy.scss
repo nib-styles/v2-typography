@@ -2,6 +2,7 @@
 @mixin copy-common() {
   font-family: $font-copy;
   font-weight: 400;
+  font-display: swap;
   line-height: 1.43; //20px at 14px
 }
 
